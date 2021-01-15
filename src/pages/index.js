@@ -9,9 +9,13 @@ import Tagline from '../components/Tagline'
 const IndexPage = () => (
   <Layout>
     <SEO title="Coming Soon" />
+
     <Background>
-      <Logo width="70px" marginBottom="20vh" />
-      <Tagline />
+      <Logo width="70px" marginBottom="15vh" />
+      
+      <Tagline title="Be You, Now.">
+        Changing the world and changing yourself are the same. Join us.
+      </Tagline>
     </Background>
   </Layout>
 )

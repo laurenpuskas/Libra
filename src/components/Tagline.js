@@ -2,11 +2,12 @@ import React from 'react'
 
 import { StyledTagline } from '../styles/Tagline'
 
-const Tagline = () => {
+const Tagline = ({ title, children }) => {
     return (
-        <div>
-            tagline
-        </div>
+        <StyledTagline>
+            <h2>{title}</h2>
+            <p>{children}</p>
+        </StyledTagline>
     )
 }
 

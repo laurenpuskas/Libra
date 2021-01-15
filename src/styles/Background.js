@@ -6,8 +6,14 @@ export const StyledBackground = styled(BackgroundImage)`
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    ::after {
+        opacity: 44% !important;
+    }
 
     .inner {
-        max-width: 1120px;
+        max-width: 1140px;
+        text-align: center;
     }
 `
