@@ -8,9 +8,13 @@ export const StyledBackground = styled(BackgroundImage)`
     align-items: center;
     position: relative;
 
+    ::after {
+        opacity: 44% !important;
+    }
+
     ::before,
     ::after {
-        background-size: 114% !important;
+        background-size: auto 114% !important;
         background-position: center bottom;
         animation-name: bgslide;
         animation-duration: 60s;
@@ -18,10 +22,6 @@ export const StyledBackground = styled(BackgroundImage)`
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
-    ::after {
-        opacity: 44% !important;
-    }
-
     @keyframes bgslide {
         from {
             background-position: center top;

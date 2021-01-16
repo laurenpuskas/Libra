@@ -10,6 +10,13 @@ export const StyledForm = styled.form`
     position: relative;
     overflow: hidden;
 
+    @media screen and (min-width: 631px) and (max-width: 1100px) {
+        width: 50vw;
+    }
+    @media screen and (max-width: 630px) {
+        width: 70vw;
+    }
+
     ::after {
         content: '';
         width: 40vw;
@@ -22,6 +29,13 @@ export const StyledForm = styled.form`
         bottom: 0;
         filter: blur(13px);
         backdrop-filter: blur(13px);
+
+        @media screen and (min-width: 631px) and (max-width: 1100px) {
+            width: 60vw;
+        }
+        @media screen and (max-width: 630px) {
+            width: 80vw;
+        }
     }
 
     input,
