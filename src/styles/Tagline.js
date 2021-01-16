@@ -8,7 +8,6 @@ export const StyledTagline = styled.div`
     p {
         font-size: 1.1rem;
         line-height: 1.7;
-        letter-spacing: 0.03rem;
         margin: 0 auto 5vh;
         padding: 0 20px;
         max-width: 400px;

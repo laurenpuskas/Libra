@@ -42,7 +42,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "GilroyBold", sans-serif;
+    font-weight: 900;
   }
 
   article, aside, details, figcaption, figure,
@@ -86,8 +86,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background: #000102;
-    font-family: "GilroyBold", sans-serif;
     color: #fff;
+    font-family: 'Open Sans', sans-serif;
   }
 
   img {

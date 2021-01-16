@@ -4,7 +4,7 @@ export const StyledForm = styled.form`
     width: 30vw;
     height: 50px;
     border-radius: 8px;
-    margin: 0 auto;
+    margin: 0 auto 16vh;
     padding: 0 0 0 15px;
     background: inherit;
     position: relative;
@@ -34,7 +34,6 @@ export const StyledForm = styled.form`
         width: 82%;
         height: 100%;
         color: rgba(255, 255, 255, 0.9);
-        letter-spacing: 0.03rem;
 
         ::placeholder {
             color: rgba(255, 255, 255, 0.6);
@@ -51,8 +50,8 @@ export const StyledForm = styled.form`
     button {
         width: 18%;
         text-align: center;
-        letter-spacing: 0.03rem;
         color: #e3a742;
+        font-weight: 400;
         cursor: pointer;
         position: relative;
 
