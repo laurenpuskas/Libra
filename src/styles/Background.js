@@ -14,13 +14,18 @@ export const StyledBackground = styled(BackgroundImage)`
 
     ::before,
     ::after {
-        background-size: auto 114% !important;
-        background-position: center bottom;
-        animation-name: bgslide;
-        animation-duration: 60s;
-        animation-timing-function: linear;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
+        background-size: cover !important;
+        background-position: center;
+
+        @media screen and (min-width: 720px) {
+            background-size: auto 114% !important;
+            background-position: center bottom;
+            animation-name: bgslide;
+            animation-duration: 60s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
     }
     @keyframes bgslide {
         from {

@@ -14,7 +14,7 @@ export const StyledForm = styled.form`
         width: 50vw;
     }
     @media screen and (max-width: 630px) {
-        width: 70vw;
+        width: 90vw;
     }
 
     ::after {
@@ -34,7 +34,7 @@ export const StyledForm = styled.form`
             width: 60vw;
         }
         @media screen and (max-width: 630px) {
-            width: 80vw;
+            width: 100vw;
         }
     }
 

@@ -12,9 +12,9 @@ const Countdown = () => {
         } else {
             return (
                 <StyledTimer>
-                    {days}<span>d&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span>
-                    {hours}<span>h&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span>
-                    {minutes}<span>m &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span>
+                    {days}<span>d<span>:</span></span>
+                    {hours}<span>h<span>:</span></span>
+                    {minutes}<span>m<span>:</span></span>
                     {seconds}<span>s</span>
                 </StyledTimer>
             )
