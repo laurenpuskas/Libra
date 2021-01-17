@@ -6,7 +6,7 @@ import { StyledTimer } from '../styles/Countdown'
 const Countdown = () => {
     const Completionist = () => <span>Welcome to Libra</span>
 
-    const renderer = ({ days, hours, minutes, seconds, completed }) => {
+    const renderer = ({ formatted: { days, hours, minutes, seconds }, completed }) => {
         if (completed) {
             return <Completionist />
         } else {
