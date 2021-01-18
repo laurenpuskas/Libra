@@ -65,7 +65,7 @@ export const StyledForm = styled.form`
         width: 18%;
         text-align: center;
         color: #e3a742;
-        font-weight: 400;
+        font-weight: 500;
         cursor: pointer;
         position: relative;
 

@@ -41,8 +41,37 @@ const GlobalStyle = createGlobalStyle`
     z-index: 2;
   }
 
+  @font-face {
+      font-family: 'Gilroy';
+      src: url('../fonts/gilroy-regular-webfont.woff2') format('woff2'),
+          url('../fonts/gilroy-regular-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Gilroy';
+      src: url('../fonts/gilroy-medium-webfont.woff2') format('woff2'),
+          url('../fonts/gilroy-medium-webfont.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Gilroy';
+      src: url('../fonts/gilroy-semibold-webfont.woff2') format('woff2'),
+          url('../fonts/gilroy-semibold-webfont.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Gilroy';
+      src: url('../fonts/gilroy-bold-webfont.woff2') format('woff2'),
+          url('../fonts/gilroy-bold-webfont.woff') format('woff');
+      font-weight: 800;
+      font-style: normal;
+  }
+
   h1, h2, h3, h4, h5, h6 {
-    font-weight: 900;
+    font-weight: 700;
   }
 
   article, aside, details, figcaption, figure,
@@ -87,7 +116,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: #000102;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Gilroy', sans-serif;
   }
 
   img {

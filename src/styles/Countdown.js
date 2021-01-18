@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledTimer = styled.p`
     font-size: 2.8rem;
-    font-weight: 900;
+    font-weight: 600;
 
     @media screen and (max-width: 630px) {
         font-size: 2.1rem;

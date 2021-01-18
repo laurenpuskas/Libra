@@ -18,13 +18,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [ `open sans` ],
-        display: 'swap'
-      }
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

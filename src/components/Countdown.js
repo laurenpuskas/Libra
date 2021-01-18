@@ -23,7 +23,7 @@ const Countdown = () => {
 
     return (
         <Timer
-            date={'2021-07-14T09:41'}
+            date={'2021-07-14T21:41'}
             renderer={renderer}
         />
     )
