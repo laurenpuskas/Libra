@@ -14,9 +14,7 @@ const IndexPage = () => {
   const [modalTokenIsOpen, setTokenIsOpen] = useState(false)
 
   const showEarlyAccessModal = () => setEarlyAccessIsOpen(true)
-  const closeEarlyAccessModal = () => setEarlyAccessIsOpen(false)
   const showTokenModal = () => setTokenIsOpen(true)
-  const closeTokenModal = () => setTokenIsOpen(false)
 
   return (
     <Layout>
@@ -61,20 +59,16 @@ const IndexPage = () => {
         </MainContent>
       </Wrapper>
 
-      {modalEarlyAccessIsOpen ? (
-        <Modal
-          closeModal={closeEarlyAccessModal}
-          formId="getEarlyAccessForm"
-          formName="Get Early Access"
-        />
-      ) : null}
-      {modalTokenIsOpen ? (
-        <Modal
-          closeModal={closeTokenModal}
-          formId="getTokenForm"
-          formName="Learn More About The Token"
-        />
-      ) : null}
+      <Modal
+        formId="getEarlyAccessForm"
+        formName="Get Early Access"
+        display={modalEarlyAccessIsOpen ? 'flex' : 'none'}
+      />
+      <Modal
+        formId="getTokenForm"
+        formName="Learn More About The Token"
+        display={modalTokenIsOpen ? 'flex' : 'none'}
+      />
     </Layout>
   )
 }

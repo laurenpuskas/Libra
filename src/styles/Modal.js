@@ -10,8 +10,8 @@ export const StyledModal = styled.div`
   bottom: 0;
   z-index: 999;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background-image: url(${background});
   background-size: cover;
   background-size: center;
@@ -26,7 +26,7 @@ export const ModalWrapper = styled.div`
   position: relative;
   border-radius: 16px;
 
-  @media screen and (min-width: 981px) {
+  @media screen and (min-width: 801px) {
     flex-direction: row;
   }
 
@@ -48,7 +48,12 @@ export const SignUp = styled.div`
   background: white;
   padding: 40px 20px 30px;
   text-align: center;
-  border-radius: 16px 0 0 16px;
+  border-radius: 16px 16px 0 0;
+  position: relative;
+
+  @media screen and (min-width: 801px) {
+    border-radius: 16px 0 0 16px;
+  }
 `
 
 export const SignUpText = styled.p`
@@ -80,7 +85,11 @@ export const StyledTag = styled.p`
 export const StyledList = styled.div`
   display: flex;
   width: 100%;
-  padding: 20px 50px 20px 40px;
+  padding: 20px 25px;
+
+  @media screen and (min-width: 801px) {
+    padding: 20px 50px 20px 40px;
+  }
 
   .inner-list {
     display: flex;
@@ -94,14 +103,23 @@ export const StyledList = styled.div`
       margin: 15px 0;
 
       img {
-        width: 35px;
+        width: 25px;
         height: auto;
-        margin-right: 20px;
+        margin-right: 15px;
+
+        @media screen and (min-width: 801px) {
+          width: 35px;
+          margin-right: 20px;
+        }
       }
 
       span {
-        font-size: 21px;
+        font-size: 16px;
         letter-spacing: 0.4px;
+
+        @media screen and (min-width: 801px) {
+          font-size: 21px;
+        }
       }
     }
   }

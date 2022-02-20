@@ -12,9 +12,13 @@ import {
   StyledList,
 } from '../styles/Modal'
 
-const Modal = ({ closeModal, formId, formName }) => {
+const Modal = ({ display, formId, formName }) => {
+  const closeModal = () => {
+    window.location.reload()
+  }
+
   return (
-    <StyledModal>
+    <StyledModal style={{ display: display }}>
       <ModalWrapper>
         <SignUp>
           <StaticImage
@@ -74,20 +78,25 @@ const Modal = ({ closeModal, formId, formName }) => {
         </StyledList>
       </ModalWrapper>
 
-      <StaticImage
-        src="../images/close-icon.png"
-        alt="close screen"
-        placeholder="none"
+      <div
         style={{
           position: 'absolute',
           top: '30px',
           left: '30px',
-          cursor: 'pointer',
-          width: '50px',
-          height: 'auto',
         }}
         onClick={closeModal}
-      />
+      >
+        <StaticImage
+          src="../images/close-icon.png"
+          alt="close screen"
+          placeholder="none"
+          style={{
+            cursor: 'pointer',
+            width: '50px',
+            height: 'auto',
+          }}
+        />
+      </div>
     </StyledModal>
   )
 }
