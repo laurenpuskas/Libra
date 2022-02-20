@@ -92,11 +92,17 @@ export const StyledImg = styled.div`
 
   @media screen and (min-width: 1460px) {
     width: 33%;
+    text-align: left;
   }
 
   img {
     width: auto;
-    height: 59vh;
+    height: 46vh;
     max-height: 500px;
+    display: inline-block;
+
+    @media screen and (min-width: 981px) {
+      height: 59vh;
+    }
   }
 `
