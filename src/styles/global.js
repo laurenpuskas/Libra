@@ -42,28 +42,28 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-      font-family: 'Gilroy';
+      font-family: 'Gilroy', Arial, sans-serif;
       src: url('../fonts/gilroy-regular-webfont.woff2') format('woff2'),
           url('../fonts/gilroy-regular-webfont.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
   @font-face {
-      font-family: 'Gilroy';
+      font-family: 'Gilroy', Arial, sans-serif;
       src: url('../fonts/gilroy-medium-webfont.woff2') format('woff2'),
           url('../fonts/gilroy-medium-webfont.woff') format('woff');
       font-weight: 500;
       font-style: normal;
   }
   @font-face {
-      font-family: 'Gilroy';
+      font-family: 'Gilroy', Arial, sans-serif;
       src: url('../fonts/gilroy-semibold-webfont.woff2') format('woff2'),
           url('../fonts/gilroy-semibold-webfont.woff') format('woff');
       font-weight: 700;
       font-style: normal;
   }
   @font-face {
-      font-family: 'Gilroy';
+      font-family: 'Gilroy', Arial, sans-serif;
       src: url('../fonts/gilroy-bold-webfont.woff2') format('woff2'),
           url('../fonts/gilroy-bold-webfont.woff') format('woff');
       font-weight: 800;
@@ -71,6 +71,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
+    color: #3a3a3a;
     font-weight: 700;
   }
 
@@ -114,8 +115,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: #000102;
-    color: #fff;
+    background: #fff;
+    color: #646464;
     font-family: 'Gilroy', sans-serif;
   }
 

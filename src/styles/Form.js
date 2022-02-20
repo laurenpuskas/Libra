@@ -1,82 +1,61 @@
 import styled from 'styled-components'
 
 export const StyledForm = styled.form`
-    width: 30vw;
-    height: 50px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.4px;
+
+  input[type='email'] {
+    width: 100%;
+    height: 42px;
+    color: #9c9c9c;
+    border: 1px solid #c9c9c9;
     border-radius: 8px;
-    margin: 0 auto 16vh;
-    padding: 0 0 0 15px;
-    background: inherit;
+    margin: 20px 0;
+    padding: 0 20px;
+
+    ::placeholder {
+      color: #9c9c9c;
+    }
+    :-webkit-autofill,
+    :-webkit-autofill:hover,
+    :-webkit-autofill:focus,
+    :-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+      -webkit-text-fill-color: #9c9c9c !important;
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 42px;
+    display: block;
     position: relative;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(
+      to right,
+      #fbc142 0%,
+      #fb9b42 50%,
+      #fbc142 100%
+    );
+    background-size: 200% 100%;
+    transition: all 0.8s linear;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    color: white;
+    margin-bottom: 40px;
 
-    @media screen and (min-width: 631px) and (max-width: 1100px) {
-        width: 50vw;
+    &:hover {
+      background-position: center right, top right;
     }
-    @media screen and (max-width: 630px) {
-        width: 90vw;
-    }
-
-    ::after {
-        content: '';
-        width: 40vw;
-        height: 100px;
-        background: rgba(255, 255, 255, 0.2); 
-        position: absolute;
-        left: -5vw;
-        right: 0;
-        top: -25px;  
-        bottom: 0;
-        filter: blur(13px);
-        backdrop-filter: blur(13px);
-
-        @media screen and (min-width: 631px) and (max-width: 1100px) {
-            width: 60vw;
-        }
-        @media screen and (max-width: 630px) {
-            width: 100vw;
-        }
-    }
-
-    input,
-    button {
-        position: relative;
-        z-index: 999;
-    }
-
-    input[type="email"] {
-        width: 82%;
-        height: 100%;
-        color: rgba(255, 255, 255, 0.9);
-
-        ::placeholder {
-            color: rgba(255, 255, 255, 0.6);
-        }
-        :-webkit-autofill,
-        :-webkit-autofill:hover,
-        :-webkit-autofill:focus,
-        :-webkit-autofill:active {
-            transition: background-color 5000s ease-in-out 0s;
-            -webkit-text-fill-color: rgba(255, 255, 255, 0.6) !important;
-        }
-    }
-
-    button {
-        width: 18%;
-        text-align: center;
-        color: #e3a742;
-        font-weight: 500;
-        cursor: pointer;
-        position: relative;
-
-        ::before {
-            content: ' ';
-            position: absolute;
-            top: -30%;
-            left: 0;
-            height: 160%;
-            width: 1px;
-            background-color: rgba(255, 255, 255, 0.15);
-        }
-    }
+  }
 `

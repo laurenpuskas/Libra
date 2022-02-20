@@ -14,8 +14,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 100,
+          backgroundColor: `transparent`,
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
