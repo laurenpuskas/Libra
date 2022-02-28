@@ -26,7 +26,7 @@ const Modal = ({ display, formId, formName }) => {
             alt="Libra - Join Us."
             placeholder="none"
             style={{
-              width: '70px',
+              width: '45px',
               marginBottom: '25px',
             }}
           />
@@ -37,7 +37,6 @@ const Modal = ({ display, formId, formName }) => {
             Change The World.
           </TaglineText>
           <Form id={formId} name={formName} />
-          <StyledTag>Join us.</StyledTag>
         </SignUp>
 
         <StyledList>
@@ -81,8 +80,8 @@ const Modal = ({ display, formId, formName }) => {
       <div
         style={{
           position: 'absolute',
-          top: '30px',
-          left: '30px',
+          top: '10px',
+          right: '15px',
         }}
         onClick={closeModal}
       >

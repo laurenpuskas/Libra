@@ -17,6 +17,7 @@ export const StyledButton = styled.button`
   @media screen and (max-width: 980px) {
     width: 100% !important;
     margin: 0 0 15px !important;
+    background: ${(props) => (props.primary ? 'transparent' : '#f5f8fc')};
   }
 
   @media screen and (min-width: 981px) {

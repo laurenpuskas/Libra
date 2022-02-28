@@ -1,46 +1,55 @@
 import styled from 'styled-components'
 import background from '../images/background.jpg'
+import mobileBackground from '../images/mobile-background.jpg'
 import pattern from '../images/modal-bg.png'
 
 export const StyledModal = styled.div`
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  min-height: 100vh;
   z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(${background});
+  background-image: url(${mobileBackground});
   background-size: cover;
   background-size: center;
+  padding-top: 70px;
+
+  @media screen and (min-width: 801px) {
+    background-image: url(${background});
+  }
 `
 
 export const ModalWrapper = styled.div`
-  width: 96%;
+  width: 92%;
   max-width: 880px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, #e9e5e5, #dce8f3);
   position: relative;
   border-radius: 16px;
 
   @media screen and (min-width: 801px) {
     flex-direction: row;
+    background: linear-gradient(to right, #e9e5e5, #dce8f3);
   }
 
   &:before {
     content: ' ';
     width: 100%;
     height: 100%;
-    background-image: url(${pattern});
     background-size: cover;
     background-position: top left;
     border-radius: 16px;
     position: absolute;
     top: 0;
     left: 0;
+
+    @media screen and (min-width: 801px) {
+      background-image: url(${pattern});
+    }
   }
 `
 
@@ -48,7 +57,7 @@ export const SignUp = styled.div`
   background: white;
   padding: 40px 20px 30px;
   text-align: center;
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px;
   position: relative;
 
   @media screen and (min-width: 801px) {
@@ -85,7 +94,7 @@ export const StyledTag = styled.p`
 export const StyledList = styled.div`
   display: flex;
   width: 100%;
-  padding: 20px 25px;
+  padding: 20px 15px 40px;
 
   @media screen and (min-width: 801px) {
     padding: 20px 50px 20px 40px;
@@ -103,7 +112,7 @@ export const StyledList = styled.div`
       margin: 15px 0;
 
       img {
-        width: 25px;
+        width: 30px;
         height: auto;
         margin-right: 15px;
 
@@ -114,11 +123,13 @@ export const StyledList = styled.div`
       }
 
       span {
-        font-size: 16px;
+        font-size: 18px;
         letter-spacing: 0.4px;
+        line-height: 1.4;
 
         @media screen and (min-width: 801px) {
           font-size: 21px;
+          line-height: 1.1;
         }
       }
     }

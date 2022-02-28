@@ -35,12 +35,14 @@ export const StyledContent = styled.div`
     }
 
     h1 {
-      font-size: 30px;
-      margin-bottom: 20px;
+      font-size: 24px;
+      margin-bottom: 30px;
+      text-align: center;
 
       @media screen and (min-width: 981px) {
         font-size: 36px;
         margin-bottom: 35px;
+        text-align: left;
       }
 
       @media screen and (min-width: 1499px) {
@@ -58,7 +60,11 @@ export const StyledContent = styled.div`
       font-size: 19px;
       line-height: 1.5;
       font-weight: 400;
-      margin-bottom: 15px;
+      margin: 0 30px 15px;
+
+      @media screen and (min-width: 981px) {
+        margin: 0 0 15px;
+      }
 
       @media screen and (min-width: 1499px) {
         font-size: 23px;
@@ -66,6 +72,11 @@ export const StyledContent = styled.div`
 
       :last-of-type {
         margin-bottom: 45px;
+
+        @media screen and (max-width: 980px) {
+          border-top: 1px solid #bbb;
+          padding-top: 15px;
+        }
       }
     }
   }
@@ -83,7 +94,7 @@ export const StyledContent = styled.div`
 export const StyledImg = styled.div`
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 981px) {
     width: 40%;
@@ -103,6 +114,22 @@ export const StyledImg = styled.div`
 
     @media screen and (min-width: 981px) {
       height: 59vh;
+    }
+  }
+
+  .phone-desktop {
+    display: none;
+
+    @media screen and (min-width: 981px) {
+      display: inline;
+    }
+  }
+
+  .phone-mobile {
+    display: none;
+
+    @media screen and (max-width: 980px) {
+      display: inline;
     }
   }
 `

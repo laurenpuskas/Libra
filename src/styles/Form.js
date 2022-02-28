@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledForm = styled.form`
-  width: 270px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -10,14 +10,22 @@ export const StyledForm = styled.form`
   text-align: center;
   letter-spacing: 0.4px;
 
+  @media screen and (min-width: 981px) {
+    width: 270px;
+  }
+
   input[type='email'] {
     width: 100%;
     height: 42px;
     color: #9c9c9c;
     border: 1px solid #c9c9c9;
     border-radius: 8px;
-    margin: 20px 0;
+    margin: 20px 0 15px;
     padding: 0 20px;
+
+    @media screen and (min-width: 981px) {
+      margin: 20px 0;
+    }
 
     ::placeholder {
       color: #9c9c9c;
@@ -53,7 +61,11 @@ export const StyledForm = styled.form`
     line-height: 1;
     letter-spacing: 0.4px;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
+
+    @media screen and (min-width: 981px) {
+      margin-bottom: 40px;
+    }
 
     &:hover {
       background-position: center right, top right;
