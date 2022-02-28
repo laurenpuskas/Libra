@@ -41,8 +41,8 @@ export const StyledButton = styled.button`
 
   &::after {
     position: absolute;
-    top: -1.5px;
-    bottom: -1.5px;
+    top: -2px;
+    bottom: -2px;
     left: -2px;
     right: -2px;
     background: linear-gradient(
@@ -56,6 +56,11 @@ export const StyledButton = styled.button`
     z-index: -1;
     border-radius: 8px;
     transition: all 0.8s linear;
+
+    @media screen and (min-width: 891px) {
+      top: -1.5px;
+      bottom: -1.5px;
+    }
   }
 
   &:hover {

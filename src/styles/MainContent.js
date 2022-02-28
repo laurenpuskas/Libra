@@ -35,7 +35,7 @@ export const StyledContent = styled.div`
     }
 
     h1 {
-      font-size: 24px;
+      font-size: 22px;
       margin-bottom: 30px;
       text-align: center;
 
@@ -57,12 +57,13 @@ export const StyledContent = styled.div`
     }
 
     p {
-      font-size: 19px;
+      font-size: 17px;
       line-height: 1.5;
       font-weight: 400;
       margin: 0 30px 15px;
 
       @media screen and (min-width: 981px) {
+        font-size: 19px;
         margin: 0 0 15px;
       }
 

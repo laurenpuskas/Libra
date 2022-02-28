@@ -100,6 +100,12 @@ export const StyledList = styled.div`
     padding: 20px 50px 20px 40px;
   }
 
+  @media screen and (max-width: 800px) {
+    .gatsby-image-wrapper {
+      width: 14%;
+    }
+  }
+
   .inner-list {
     display: flex;
     flex-direction: column;
@@ -126,6 +132,10 @@ export const StyledList = styled.div`
         font-size: 18px;
         letter-spacing: 0.4px;
         line-height: 1.4;
+
+        @media screen and (max-width: 800px) {
+          width: 86%;
+        }
 
         @media screen and (min-width: 801px) {
           font-size: 21px;

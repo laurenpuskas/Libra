@@ -13,11 +13,12 @@ export const StyledWrapper = styled.div`
   align-items: center;
   background-image: url(${mobileBackground});
   background-size: cover;
-  background-size: center;
+  background-size: left;
 
   @media screen and (min-width: 981px) {
     height: 100vh;
     background-image: url(${background});
+    background-size: center;
   }
 
   .inner {
