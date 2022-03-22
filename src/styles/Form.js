@@ -14,6 +14,30 @@ export const StyledForm = styled.form`
     width: 270px;
   }
 
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+
+  .success-message {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.4px;
+      font-weight: 500;
+      color: #737373;
+      margin-bottom: 10px;
+    }
+  }
+
   input[type='email'] {
     width: 100%;
     height: 42px;

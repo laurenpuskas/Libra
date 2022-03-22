@@ -35,7 +35,7 @@ export const StyledContent = styled.div`
     }
 
     h1 {
-      font-size: 22px;
+      font-size: 28px;
       margin-bottom: 30px;
       text-align: center;
 
@@ -53,6 +53,15 @@ export const StyledContent = styled.div`
         background: linear-gradient(to right, #fbc142, #fb9b42);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @media screen and (max-width: 981px) {
+          &:nth-of-type(1) {
+            &::after {
+              display: block;
+              content: ' ';
+            }
+          }
+        }
       }
     }
 

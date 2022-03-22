@@ -8,18 +8,17 @@ import {
   SignUp,
   SignUpText,
   TaglineText,
-  StyledTag,
   StyledList,
 } from '../styles/Modal'
 
-const Modal = ({ display, formId, formName }) => {
+const Modal = ({ visibility, opacity, formId, formName }) => {
   const closeModal = () => {
     window.location.reload()
   }
 
   return (
-    <StyledModal style={{ display: display }}>
-      <ModalWrapper>
+    <StyledModal style={{ visibility: visibility }}>
+      <ModalWrapper style={{ opacity: opacity }}>
         <SignUp>
           <StaticImage
             src="../images/logo_2x.png"

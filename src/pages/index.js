@@ -70,12 +70,14 @@ const IndexPage = () => {
       <Modal
         formId="getEarlyAccessForm"
         formName="Get Early Access"
-        display={modalEarlyAccessIsOpen ? 'flex' : 'none'}
+        visibility={modalEarlyAccessIsOpen ? 'visible' : 'hidden'}
+        opacity={modalEarlyAccessIsOpen ? 1 : 0}
       />
       <Modal
         formId="getTokenForm"
         formName="Learn More About The Token"
-        display={modalTokenIsOpen ? 'flex' : 'none'}
+        visibility={modalTokenIsOpen ? 'visible' : 'hidden'}
+        opacity={modalTokenIsOpen ? 1 : 0}
       />
     </Layout>
   )

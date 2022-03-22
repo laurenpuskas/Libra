@@ -4,7 +4,7 @@ import mobileBackground from '../images/mobile-background.jpg'
 import pattern from '../images/modal-bg.png'
 
 export const StyledModal = styled.div`
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -30,6 +30,7 @@ export const ModalWrapper = styled.div`
   flex-direction: column;
   position: relative;
   border-radius: 16px;
+  transition: opacity 1s ease-in-out;
 
   @media screen and (min-width: 801px) {
     flex-direction: row;
@@ -82,13 +83,6 @@ export const TaglineText = styled.p`
   background: linear-gradient(to right, #fbc142, #fb9b42);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-`
-
-export const StyledTag = styled.p`
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.4px;
-  color: #adadad;
 `
 
 export const StyledList = styled.div`
