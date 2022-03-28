@@ -9,6 +9,10 @@ import {
   SignUpText,
   TaglineText,
   StyledList,
+  Gradients,
+  RedCircle,
+  GreenCircle,
+  BlueCircle,
 } from '../styles/Modal'
 
 const Modal = ({ visibility, opacity, formId, formName }) => {
@@ -81,6 +85,7 @@ const Modal = ({ visibility, opacity, formId, formName }) => {
           position: 'absolute',
           top: '10px',
           right: '15px',
+          zIndex: '5',
         }}
         onClick={closeModal}
       >
@@ -95,6 +100,12 @@ const Modal = ({ visibility, opacity, formId, formName }) => {
           }}
         />
       </div>
+
+      <Gradients>
+        <GreenCircle />
+        <RedCircle />
+        <BlueCircle />
+      </Gradients>
     </StyledModal>
   )
 }
