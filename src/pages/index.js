@@ -55,7 +55,7 @@ const IndexPage = () => {
                   </Button>
                   <Button
                     onClick={showTokenModal}
-                    style={{ width: 'calc(50% - 15px)' }}
+                    style={{ width: 'calc(50% - 15px)', display: 'none' }}
                   >
                     Learn About The Token
                   </Button>
